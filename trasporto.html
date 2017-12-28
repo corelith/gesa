@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GESA S.R.L.</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link rel="stylesheet" href="stile.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- HEADER -->
+<div id="header_container"></div>
+
+<!-- COVER -->
+<section class="cover" style="background-image: url(resources/PhotoSlider/Gru_60_T.jpg);">
+	<div class="cover__filter"></div>
+	<div class="cover__caption">
+		<div class="cover__caption__copy">
+			<h1>TRASPORTO MATERIALI E RIFIUTI</h1>
+		</div>
+	</div>
+</section>
+
+<article class="single">
+	<div class="single__copy">
+		<h1>Grandi mezzi per grandi opere</h1>
+		<p class="testi">Gesa è attiva nel trasporto per terzi e non, di qualsiasi prodotto per l’edilizia compresi calcestruzzo, materiali da recupero e non, inerti e manti bituminosi, nonché prodotti petroliferi. Siamo inoltre competenti nella commercializzazione e la vendita di prodotti quali oli , grassi e carburanti. Particolare impegno lo riserviamo nella progettazione e la gestione, in conto proprio o in conto terzi, di impianti di depurazione, trasformazione, compostaggio, trattamento e rigenerazione. Ancora operiamo nel recupero, innocuizzazione, discarica, ammasso, stoccaggio e smaltimento rifiuti di ogni genere, tipologia e provenienza rientranti nelle categorie 10, 4, 5, 8, 9, 10a o di loro frazioni separate, siano essi  speciali pericolosi e non. È nostra prerogativa offrire l’assistenza la consulenza l’intermediazione e la commercializzazione di ogni tipologia di rifiuti inclusi rottami ferrosi e loro leghe. Eseguiamo in piena eco sostenibilità opere di bonifica ambientale e di ogni tipologia di sito disponendoci inoltre della possibilità di noleggio di autobotti per la pulizia proponendo inoltre video ispezioni a tubature ed impianti. Non ultimo il nostro impegno nelle disinfestazioni e nelle opere di sanificazione in genere.</p>
+	</div>
+</article>
+
+
+<!-- FOOTER -->
+<div id="footer_container"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/scriptDario.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".header__icon-bar").click(function(e) {
+            $(".header__menu").toggleClass("is-open");
+            e.preventDefault();
+        });
+        $('#header_container').load('header.html');
+        $('#footer_container').load('footer.html');
+    });
+</script>
+</body>
+</html>

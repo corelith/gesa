@@ -1,0 +1,34 @@
+
+<header id="header" class="header clearfix">
+    <a href="index.html" class="header__logo"><img class="logo"src="resources/Gesa-logo-3.png"></a>
+    <a href="#" class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <!--<div class="header__menu__container clearfix">-->
+    <ul id="menuList" class="header__menu animate">
+        <li class="header__menu__item"><a href="chi_siamo.html">Chi siamo</a></li>
+        <!--<li class="header__menu__item"><a href="trasporto.html">Trasporto<br> materiali e rifiuti</a></li>-->
+        <!--<li class="header__menu__item"><a href="impianti.html">Impianti<br> ed edilizia</a></li>-->
+        <!--<li class="header__menu__item"><a href="pitturazione.html">Pitturazione<br> e sabbiatura</a></li>-->
+        <li class="header__menu__item"><a href="noleggio.html">Attrezzature</a></li>
+        <li class="header__menu__item"><a href="index.html">Home</a></li>
+    </ul>
+    <!--</div>-->
+</header>
+<!-- DARIO -->
+<div id="dario" class="header__darioHide animate" >
+    <a href="#" class="header__logo__dario">
+        <img class="logo__dario"src="resources/Gesa-logo-3.png" id="logoDario">
+    </a>
+    <ul id="menuList_min" class="header__menu__dario animate"></ul>
+</div>
+<script src="js/scriptDario.js"></script>
+<script>
+    $(".header__icon-bar").click(function(e) {
+        $(".header__menu").toggleClass("is-open");
+        e.preventDefault();
+    });
+    $(document).ready(menuShower());
+</script>
