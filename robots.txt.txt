@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: 
+Disallow: /noleggio.html
+Disallow: /chi_siamo.html
+
+Sitemap: http://www.gesasrl.net/sitemap.xml
