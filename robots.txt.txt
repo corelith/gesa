@@ -1,4 +1,4 @@
-User-Agent: *
+User-agent: *
 Disallow: 
 Disallow: /noleggio.html
 Disallow: /chi_siamo.html
